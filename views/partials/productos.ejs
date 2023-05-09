@@ -22,16 +22,16 @@
     <table id="table" class="table table-success table-hover">
         <thead class="table-dark">
             <tr>
-                <th scope="col">Title</th>
-                <th scope="col">Price</th>
-                <th scope="col">Thumbnail</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Precio (K)</th>
+                <th scope="col">Imagen</th>
             </tr>
         </thead>
         <tbody id="tbody">
             <% productos.forEach(producto => { %>
                 <tr class="product" id="<%= producto.id %>" data-bs-toggle="modal" data-bs-target="#myModal">
                     <th scope="col"><%= producto.title %></th>
-                    <th scope="col">$<%= producto.price %></th>
+                    <th scope="col">$<%= producto.price %></th> 
                     <th scope="col"><img src="<%= producto.thumbnail %>" alt="imagen de <%= producto.title %> " style="height: 30px;"></th>
                 </tr>
             <% }) %>

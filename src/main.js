@@ -10,6 +10,7 @@ import { error } from './routes/error.js'
 import { home } from './routes/home.js'
 import { cart } from './routes/cart.js'
 import { logout } from './routes/logout.js'
+import { productRouter } from './routes/addProduct.js'
 import yargs from  'yargs'
 import cluster from 'cluster'
 import { cpus } from 'os'
@@ -42,6 +43,7 @@ app.use( '/register' , register )
 app.use( '/error' , error )
 app.use( '/home' , home )
 app.use( '/cart' , cart )
+app.use( '/products', productRouter)
 app.get('*', (req, res) => {
     res.redirect('/login')
 })

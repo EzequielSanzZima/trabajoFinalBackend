@@ -38,7 +38,7 @@ class ContenedorMongoDb {
                 return transformMongoObject(res)
             }
         } catch (error) {
-            logger.err(error)
+            logger.error(error)
             return false
         }
     }
@@ -48,7 +48,7 @@ class ContenedorMongoDb {
             const res = await this.collection.create(elemento)
             return transformMongoObject(res)
         } catch (error) {
-            logger.err(error)
+            logger.error(error)
             return false
         }
     }
@@ -58,7 +58,7 @@ class ContenedorMongoDb {
             const res = await this.collection.updateOne({_id: id} , { $set: elemento })
             return res.acknowledged
         } catch (error) {
-            logger.err(error)
+            logger.error(error)
             return false
         }
     }
@@ -78,7 +78,7 @@ class ContenedorMongoDb {
             const res = await   this.collection.deleteMany()
             return res.acknowledged
         } catch (error) {
-            logger.err(error)
+            logger.error(error)
             return false
         }
     }

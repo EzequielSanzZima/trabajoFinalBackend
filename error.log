@@ -1,434 +1,105 @@
-[2022-11-06T12:24:35.435] [ERROR] default - error AL ENVIAR WHATSAPP RestException [Error]: Authenticate
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 401,
-  code: 20003,
-  moreInfo: 'https://www.twilio.com/docs/errors/20003',
-  details: undefined
+[2023-05-08T15:13:14.648] [ERROR] default - Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials v26-20020a4ae6da000000b0054c84710025sm4285185oot.8 - gsmtp
+    at SMTPConnection._formatError (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:1542:34)
+    at SMTPConnection.<anonymous> (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)
+    at SMTPConnection._processResponse (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)
+    at SMTPConnection._onData (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)
+    at SMTPConnection._onSocketData (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials v26-20020a4ae6da000000b0054c84710025sm4285185oot.8 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
 }
-[2022-11-06T12:24:36.919] [ERROR] default - ERROR AL ENVIAR SMS RestException [Error]: Authenticate
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 401,
-  code: 20003,
-  moreInfo: 'https://www.twilio.com/docs/errors/20003',
-  details: undefined
+[2023-05-08T15:15:46.409] [ERROR] default - Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials s25-20020a4ae559000000b0051134f333d3sm4308526oot.16 - gsmtp
+    at SMTPConnection._formatError (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:1542:34)
+    at SMTPConnection.<anonymous> (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)
+    at SMTPConnection._processResponse (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)
+    at SMTPConnection._onData (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)
+    at SMTPConnection._onSocketData (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials s25-20020a4ae559000000b0051134f333d3sm4308526oot.16 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
 }
-[2022-11-06T12:51:39.208] [ERROR] default - error AL ENVIAR WHATSAPP new cart RestException [Error]: The Messaging Service Sid 'MG779504d399a3a6f2b06acf3bdf5faac1', is invalid.
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 400,
-  code: 21705,
-  moreInfo: 'https://www.twilio.com/docs/errors/21705',
-  details: undefined
+[2023-05-08T15:20:06.952] [ERROR] default - Error: Usuarios validation failed: edad: Path `edad` is required., direccion: Path `direccion` is required., nombre: Path `nombre` is required.
+    at ValidationError.inspect (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\mongoose\lib\error\validation.js:49:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\log4js\lib\layouts.js:65:52)
+    at app (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\log4js\lib\appenders\file.js:98:23)
+    at F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\log4js\lib\appenders\logLevelFilter.js:10:7
+    at F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    edad: ValidatorError: Path `edad` is required.
+        at validate (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\mongoose\lib\schematype.js:1330:7)
+        at F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\mongoose\lib\document.js:2835:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'edad',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    direccion: ValidatorError: Path `direccion` is required.
+        at validate (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\mongoose\lib\schematype.js:1330:7)
+        at F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\mongoose\lib\document.js:2835:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'direccion',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    nombre: ValidatorError: Path `nombre` is required.
+        at validate (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\mongoose\lib\schematype.js:1330:7)
+        at F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\mongoose\lib\document.js:2835:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'nombre',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Usuarios validation failed'
 }
-[2022-11-06T12:51:39.995] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: The Messaging Service Sid 'MG779504d399a3a6f2b06acf3bdf5faac1', is invalid.
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 400,
-  code: 21705,
-  moreInfo: 'https://www.twilio.com/docs/errors/21705',
-  details: undefined
-}
-[2022-11-06T12:56:02.384] [ERROR] default - error AL ENVIAR WHATSAPP new cart RestException [Error]: The 'From' number  is not a valid phone number, shortcode, or alphanumeric sender ID.
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 400,
-  code: 21212,
-  moreInfo: 'https://www.twilio.com/docs/errors/21212',
-  details: undefined
-}
-[2022-11-06T12:56:03.208] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: A 'From' phone number is required.
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 400,
-  code: 21603,
-  moreInfo: 'https://www.twilio.com/docs/errors/21603',
-  details: undefined
-}
-[2022-11-06T13:00:09.210] [ERROR] default - error AL ENVIAR WHATSAPP new cart RestException [Error]: The Messaging Service Sid 'MG779504d399a3a6f2b06acf3bdf5faac1', is invalid.
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 400,
-  code: 21705,
-  moreInfo: 'https://www.twilio.com/docs/errors/21705',
-  details: undefined
-}
-[2022-11-06T13:00:09.973] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: The Messaging Service Sid 'MG779504d399a3a6f2b06acf3bdf5faac1', is invalid.
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 400,
-  code: 21705,
-  moreInfo: 'https://www.twilio.com/docs/errors/21705',
-  details: undefined
-}
-[2022-11-06T13:12:20.406] [ERROR] default - error AL ENVIAR WHATSAPP new cart RestException [Error]: The Messaging Service Sid 'MG779504d399a3a6f2b06acf3bdf5faac1', is invalid.
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 400,
-  code: 21705,
-  moreInfo: 'https://www.twilio.com/docs/errors/21705',
-  details: undefined
-}
-[2022-11-06T13:12:21.137] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: The Messaging Service Sid 'MG779504d399a3a6f2b06acf3bdf5faac1', is invalid.
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 400,
-  code: 21705,
-  moreInfo: 'https://www.twilio.com/docs/errors/21705',
-  details: undefined
-}
-[2022-11-06T17:51:19.599] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: The Messaging Service Sid 'MG779504d399a3a6f2b06acf3bdf5faac1', is invalid.
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 400,
-  code: 21705,
-  moreInfo: 'https://www.twilio.com/docs/errors/21705',
-  details: undefined
-}
-[2022-11-06T18:06:29.351] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: The Messaging Service Sid AC91e0d2c20217446a06acabbd5aff1f78 is invalid.
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 400,
-  code: 21705,
-  moreInfo: 'https://www.twilio.com/docs/errors/21705',
-  details: undefined
-}
-[2022-11-06T18:06:51.753] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: The Messaging Service Sid AC91e0d2c20217446a06acabbd5aff1f78 is invalid.
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 400,
-  code: 21705,
-  moreInfo: 'https://www.twilio.com/docs/errors/21705',
-  details: undefined
-}
-[2022-11-06T18:17:47.740] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: The Messaging Service Sid MG779504d399a3a6f2b06acf3bdf5faac1, is invalid.
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 400,
-  code: 21705,
-  moreInfo: 'https://www.twilio.com/docs/errors/21705',
-  details: undefined
-}
-[2022-11-06T18:18:36.250] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: The Messaging Service Sid MG779504d399a3a6f2b06acf3bdf5faac1, is invalid.
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 400,
-  code: 21705,
-  moreInfo: 'https://www.twilio.com/docs/errors/21705',
-  details: undefined
-}
-[2022-11-06T18:27:50.439] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: The Messaging Service Sid 'MG779504d399a3a6f2b06acf3bdf5faac1', is invalid.
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 400,
-  code: 21705,
-  moreInfo: 'https://www.twilio.com/docs/errors/21705',
-  details: undefined
-}
-[2022-11-07T19:57:39.996] [ERROR] default - error AL ENVIAR WHATSAPP new cart RestException [Error]: Authenticate
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 401,
-  code: 20003,
-  moreInfo: 'https://www.twilio.com/docs/errors/20003',
-  details: undefined
-}
-[2022-11-07T19:57:40.825] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: Authenticate
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 401,
-  code: 20003,
-  moreInfo: 'https://www.twilio.com/docs/errors/20003',
-  details: undefined
-}
-[2022-11-07T19:59:13.598] [ERROR] default - error AL ENVIAR WHATSAPP new cart RestException [Error]: Authenticate
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 401,
-  code: 20003,
-  moreInfo: 'https://www.twilio.com/docs/errors/20003',
-  details: undefined
-}
-[2022-11-07T19:59:14.363] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: Authenticate
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 401,
-  code: 20003,
-  moreInfo: 'https://www.twilio.com/docs/errors/20003',
-  details: undefined
-}
-[2022-11-07T20:03:30.831] [ERROR] default - error AL ENVIAR WHATSAPP new cart RestException [Error]: Authenticate
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 401,
-  code: 20003,
-  moreInfo: 'https://www.twilio.com/docs/errors/20003',
-  details: undefined
-}
-[2022-11-07T20:03:31.739] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: Authenticate
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 401,
-  code: 20003,
-  moreInfo: 'https://www.twilio.com/docs/errors/20003',
-  details: undefined
-}
-[2022-11-07T20:09:36.389] [ERROR] default - error AL ENVIAR WHATSAPP new cart RestException [Error]: Authenticate
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 401,
-  code: 20003,
-  moreInfo: 'https://www.twilio.com/docs/errors/20003',
-  details: undefined
-}
-[2022-11-07T20:09:37.205] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: Authenticate
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 401,
-  code: 20003,
-  moreInfo: 'https://www.twilio.com/docs/errors/20003',
-  details: undefined
-}
-[2022-11-07T20:13:02.841] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: Authenticate
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 401,
-  code: 20003,
-  moreInfo: 'https://www.twilio.com/docs/errors/20003',
-  details: undefined
-}
-[2022-11-07T20:17:02.454] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: Authenticate
-    at success (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\sebas\Dropbox\PROGRAMACION\CODERHOUSE\FULLSTACK\4.BackEnd\terceraEntregaDelProyectoFinal\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 401,
-  code: 20003,
-  moreInfo: 'https://www.twilio.com/docs/errors/20003',
-  details: undefined
-}
-[2023-03-14T09:26:39.553] [ERROR] default - error AL ENVIAR RestException [Error]: The requested resource /2010-04-01/Accounts/AC0ba0f39a79dbd14f4e5426e54280ae8b/Messages.json was not found
-    at success (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 404,
-  code: 20404,
-  moreInfo: 'https://www.twilio.com/docs/errors/20404',
-  details: undefined
-}
-[2023-03-14T09:48:13.207] [ERROR] default - error AL ENVIAR WHATSAPP new cart RestException [Error]: The requested resource /2010-04-01/Accounts/AC0ba0f39a79dbd14f4e5426e54280ae8b/Messages.json was not found
-    at success (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 404,
-  code: 20404,
-  moreInfo: 'https://www.twilio.com/docs/errors/20404',
-  details: undefined
-}
-[2023-03-14T09:48:13.987] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: The requested resource /2010-04-01/Accounts/AC0ba0f39a79dbd14f4e5426e54280ae8b/Messages.json was not found
-    at success (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 404,
-  code: 20404,
-  moreInfo: 'https://www.twilio.com/docs/errors/20404',
-  details: undefined
-}
-[2023-03-14T09:59:06.763] [ERROR] default - error AL ENVIAR WHATSAPP new cart RestException [Error]: The requested resource /2010-04-01/Accounts/AC0ba0f39a79dbd14f4e5426e54280ae8b/Messages.json was not found
-    at success (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 404,
-  code: 20404,
-  moreInfo: 'https://www.twilio.com/docs/errors/20404',
-  details: undefined
-}
-[2023-03-14T09:59:07.529] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: The requested resource /2010-04-01/Accounts/AC0ba0f39a79dbd14f4e5426e54280ae8b/Messages.json was not found
-    at success (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\twilio\lib\base\Version.js:135:15)
-    at Promise_then_fulfilled (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:766:44)
-    at Promise_done_fulfilled (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:835:31)
-    at Fulfilled.Fulfilled_dispatch [as dispatch] (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:1229:9)
-    at Pending_become_eachMessage_task (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\q\q.js:1369:30)
-    at RawTask.call (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\asap\asap.js:40:19)
-    at flush (C:\Users\PipoL\Downloads\tercera-entrega-del-proyecto-final-main\node_modules\asap\raw.js:50:29)
-    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
-  status: 404,
-  code: 20404,
-  moreInfo: 'https://www.twilio.com/docs/errors/20404',
-  details: undefined
+[2023-05-08T15:20:08.660] [ERROR] default - Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials m20-20020aca1e14000000b003896e31867esm255532oic.49 - gsmtp
+    at SMTPConnection._formatError (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:1542:34)
+    at SMTPConnection.<anonymous> (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:546:26)
+    at SMTPConnection._processResponse (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)
+    at SMTPConnection._onData (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)
+    at SMTPConnection._onSocketData (F:\Trabajos\Backend\Trabajo-Final-Backend-main\node_modules\nodemailer\lib\smtp-connection\index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10) {
+  code: 'EAUTH',
+  response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+    '535 5.7.8  https://support.google.com/mail/?p=BadCredentials m20-20020aca1e14000000b003896e31867esm255532oic.49 - gsmtp',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
 }

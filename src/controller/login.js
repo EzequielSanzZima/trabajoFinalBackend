@@ -10,7 +10,7 @@ export const postLoginController = async (req, res, next) => {
     }else{
 
         if(!isValidPassword(req.body.password , user.password)) {
-            req.session.message = 'Password incorrecto'
+            req.session.message = 'Contraseña incorrecta'
         }}
 
     req.session.route = 'login'

@@ -10,15 +10,16 @@ export const postRegisterController = async (req, res) => {
     const password = createHash(req.body.password);
   
     if (usuarios.find((usuario) => usuario.email === email)) {
-      req.session.message = 'El correo ya existe';
+      req.session.message = 'Ya hay una cuenta con ese correo.';
       req.session.route = 'register';
       req.session.fileName = req.body.fileName;
       res.redirect('/error');
     } else {
       const newUser = {
-        nombre: req.body.nombre,
-        direccion: req.body.direccion,
-        edad: req.body.edad,
+        id: usuarios.length + 1,
+        name: req.body.nombre,
+        direction: req.body.direccion,
+        age: req.body.edad,
         email,
         password,
         photo: req.body.fileName,
@@ -31,7 +32,7 @@ export const postRegisterController = async (req, res) => {
   
       const msg = `NUEVO USUARIO REGISTARDO
         NOMBRE: ${newUser.nombre}
-        DIRECCION: ${newUser.direccion}
+        DIRECCION: ${newUser.direction}
         EDAD: ${newUser.edad}
         TELEFONO: ${newUser.phone}
         EMAIL: ${newUser.email}

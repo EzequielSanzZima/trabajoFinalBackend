@@ -7,9 +7,6 @@
           <h5 class="modal-title" id="exampleModalLabel">Desea eliminar el producto?</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <!-- <div class="modal-body">
-                <input type="number" class="form-control"  id="popo" placeholder="1" required>
-        </div> -->
         <div class="modal-footer">
           <button type="button" class="btn btn-success" id="btnBorrar" data-bs-dismiss="modal">Aceptar</button>
         </div>
@@ -26,7 +23,7 @@
             <tr>
                 <th scope="col">Producto</th>
                 <th scope="col">Precio</th>
-                <th scope="col">Cantidad</th>
+                <th scope="col">Cantidad (K)</th>
             </tr>
         </thead>
           <tbody id="tbody">
@@ -34,7 +31,8 @@
                 <tr class="cart" id="<%= producto.id %>" data-bs-toggle="modal" data-bs-target="#myModal">
                   <th scope="col"><%= producto.title %></th>
                       <th scope="col">$<%= producto.price %></th>
-                      <th scope="col"><%= producto.cantidad %></th>
+                      <th scope="col"><%= producto.cantidad %>K</th>
+                      <th scope="col"><img src="<%= producto.thumbnail %>" alt="imagen de <%= producto.title %> " style="height: 30px;"></th>
                   </tr>
             <% }) %>
           </tbody>
