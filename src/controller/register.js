@@ -16,10 +16,9 @@ export const postRegisterController = async (req, res) => {
       res.redirect('/error');
     } else {
       const newUser = {
-        id: usuarios.length + 1,
-        name: req.body.nombre,
-        direction: req.body.direccion,
-        age: req.body.edad,
+        nombre: req.body.nombre,
+        direccion: req.body.direccion,
+        edad: req.body.edad,
         email,
         password,
         photo: req.body.fileName,
@@ -32,12 +31,11 @@ export const postRegisterController = async (req, res) => {
   
       const msg = `NUEVO USUARIO REGISTARDO
         NOMBRE: ${newUser.nombre}
-        DIRECCION: ${newUser.direction}
+        DIRECCION: ${newUser.direccion}
         EDAD: ${newUser.edad}
         TELEFONO: ${newUser.phone}
         EMAIL: ${newUser.email}
-        FOTO PERFIL: /uploads/${newUser.photo}
-        -----------------AQUITERMINA-----------------`;
+        FOTO PERFIL: /uploads/${newUser.photo}`;
   
       res.redirect('/login');
     }

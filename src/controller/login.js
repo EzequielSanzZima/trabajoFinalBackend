@@ -6,11 +6,11 @@ export const postLoginController = async (req, res, next) => {
     const user = usuarios.find(usuario => usuario.email === req.body.username)
 
     if( !user) {
-        req.session.message = 'Usario no encontrado'
+        req.session.message = 'email no encontrado'
     }else{
 
         if(!isValidPassword(req.body.password , user.password)) {
-            req.session.message = 'Contraseña incorrecta'
+            req.session.message = 'Contrasena incorrecta'
         }}
 
     req.session.route = 'login'

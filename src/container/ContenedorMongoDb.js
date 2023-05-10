@@ -78,7 +78,7 @@ class ContenedorMongoDb {
             const res = await   this.collection.deleteMany()
             return res.acknowledged
         } catch (error) {
-            logger.error(error)
+            logger.err(error)
             return false
         }
     }

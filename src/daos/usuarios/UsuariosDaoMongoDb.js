@@ -17,7 +17,7 @@ class UsuariosDaoMongoDb extends ContenedorMongoDb{
                 required: true,
                 allowBlank: false,
                 allowedNumberTypes: [mongooseTypePhone.PhoneNumberType.MOBILE, mongooseTypePhone.PhoneNumberType.FIXED_LINE_OR_MOBILE],
-                phoneNumberFormat: mongooseTypePhone.PhoneNumberFormat.INTERNATIONAL,
+                phoneNumberFormat: mongooseTypePhone.PhoneNumberFormat.INTERNATIONAL, // can be omitted to keep raw input
                 defaultRegion: 'AR',
                 parseOnGet: false
             }

@@ -1,7 +1,7 @@
 import { carritosDao, usuariosDao } from "../daos/index.js"
 import { sendMailNewCart } from "../utils/nodemailer.js"
 
-let carritos = []
+let carritos = [] 
 
 export const getCartController = async (req, res ) => {
     if(req.isAuthenticated()){

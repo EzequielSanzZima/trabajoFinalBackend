@@ -15,7 +15,7 @@ const transporter = createTransport({
 export const sendMailNewUser = async ( newUser ) => {
 
     const mailOptions = {
-        from: 'Tienda Backend',
+        from: 'Trabajo final backend',
         to: userMailAdmin,
         subject: 'Nuevo usuario registrado',
         html:
@@ -27,7 +27,6 @@ export const sendMailNewUser = async ( newUser ) => {
                 <li>EDAD <span style="color: green;">${newUser.edad}</span></li>
                 <li>TELEFONO <span style="color: green;">${newUser.phone}</span></li>
                 <li>EMAIL <span style="color: green;">${newUser.email}</span></li>
-                <li>imagen <img src="uploads/${newUser.photo}" width="16" height="16"/></li>
             </ul>
         </div>`
 
@@ -51,7 +50,7 @@ export const sendMailNewCart = async ( nombre, email, cart ) => {
             });
 
     const mailOptions = {
-        from: 'Tienda Backend',
+        from: 'Trabajo final backen',
         to: userMailAdmin,
         subject: 'nuevo pedido de ' + nombre ,
         html: `<h1 style="color: blue;">Nueva compra del usuario: <span style="color: green;"> ${email} </span></h1><div><ul>` 
