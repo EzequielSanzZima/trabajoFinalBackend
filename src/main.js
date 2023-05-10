@@ -23,19 +23,19 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.static('public'))
 
 
-//------------------Configuracion EJS--------------------//
+//------------------Configuracion--------------------//
 app.set('views', './views')
 app.set('view engine', 'ejs')
 
 
-//-----------------Session-------------------------------//
+//-----------------Session Mongo-------------------------------//
 app.use(session(mongoSession))
 
 //-----------------Passport------------------------------//
 app.use(passport.initialize())
 app.use(passport.session())
 
-//------------------------------RUTAS---------------------//
+//------------------------------Rutas---------------------//
 app.use( '/login', login )
 app.use( '/logout' , logout)
 app.use( '/register' , register )
