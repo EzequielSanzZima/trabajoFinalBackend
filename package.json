@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Coriannder/tercera-entrega-del-proyecto-final.git"
+    "url": "git+https://github.com/EzequielSanzZima/tercera-entrega-del-proyecto-final.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Coriannder/tercera-entrega-del-proyecto-final/issues"
+    "url": "https://github.com/EzequielSanzZima/tercera-entrega-del-proyecto-final/issues"
   },
-  "homepage": "https://github.com/Coriannder/tercera-entrega-del-proyecto-final#readme",
+  "homepage": "https://github.com/EzequielSanzZima/tercera-entrega-del-proyecto-final#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "connect-mongo": "^4.6.0",
