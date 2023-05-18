@@ -14,9 +14,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EzequielSanzZima/tercera-entrega-del-proyecto-final/issues"
-  },
   "homepage": "https://github.com/EzequielSanzZima/tercera-entrega-del-proyecto-final#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
